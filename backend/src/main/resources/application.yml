@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/lms?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: 962464
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+app:
+  jwt:
+    secret: "change-this-secret-to-a-long-random-string-please"
+    expiration-ms: 86400000
+  admin:
+    username: admin
+    password: admin123
+  upload:
+    dir: uploads
+    allowed-extensions: "pdf,doc,docx,ppt,pptx,txt,md,zip,rar,mp3,wav,mp4,avi,mov,jpg,jpeg,png"
+    allowed-content-types: "application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation,text/plain,text/markdown,application/zip,application/x-rar-compressed,audio/mpeg,audio/wav,video/mp4,video/x-msvideo,video/quicktime,image/jpeg,image/png"

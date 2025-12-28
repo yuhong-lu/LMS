@@ -1,0 +1,7 @@
+{
+  "name": "EduFlow - AI Course Management",
+  "description": "A modern online course management system with AI-powered brand asset generation and image editing capabilities using Gemini 2.5 Flash Image.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

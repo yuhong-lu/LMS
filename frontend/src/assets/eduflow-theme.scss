@@ -1,0 +1,93 @@
+:root {
+  --ef-primary: #6366f1;
+  --ef-primary-2: #8b5cf6;
+  --ef-primary-soft: #eef2ff;
+  --ef-bg: #f7f8ff;
+  --ef-card: #ffffff;
+  --ef-border: #e6e8f7;
+  --ef-text: #0f172a;
+  --ef-muted: #6b7280;
+  --ef-shadow: 0 14px 34px rgba(99, 102, 241, 0.09);
+}
+
+* {
+  font-family: 'Inter', 'Segoe UI', 'PingFang SC', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: var(--ef-bg);
+  color: var(--ef-text);
+}
+
+.gradient-bg {
+  background: linear-gradient(120deg, var(--ef-primary), var(--ef-primary-2));
+  color: #fff;
+}
+
+.gradient-text {
+  background: linear-gradient(120deg, var(--ef-primary), var(--ef-primary-2));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.soft-card {
+  background: var(--ef-card);
+  border: 1px solid var(--ef-border);
+  border-radius: 20px;
+  box-shadow: var(--ef-shadow);
+}
+
+.eduflow-page {
+  background: var(--ef-bg);
+  padding: 12px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #f4f6ff;
+  color: #5b6299;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* Element Plus 基础样式微调为 EduFlow 风格 */
+:global(.el-card) {
+  border-radius: 18px;
+  border: 1px solid var(--ef-border);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05);
+}
+
+:global(.el-button--primary) {
+  background: linear-gradient(120deg, var(--ef-primary), var(--ef-primary-2));
+  border: none;
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.25);
+}
+
+:global(.el-button--primary:hover) {
+  filter: brightness(1.02);
+}
+
+:global(.el-input__wrapper) {
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px var(--ef-border) inset;
+}
+
+:global(.el-select .el-input__wrapper) {
+  border-radius: 12px;
+}
+
+:global(.el-menu) {
+  background: transparent;
+}
+
+:global(.el-menu-item) {
+  border-radius: 12px;
+}
+
+:global(.el-menu-item:hover) {
+  background: rgba(99, 102, 241, 0.08);
+}
